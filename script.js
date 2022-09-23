@@ -1,10 +1,11 @@
-function market_search() {
-    let search = document.getElementById("market_search");
-    let magnifier = document.getElementById("magnifier");
-    search.addEventListener("focus", function () {
-        magnifier.style.display = "none";
-        search.style.placeItems = "center";
-    });
+const item_info = () => {
+    const item_detail = document.getElementById("item_detail");
+    item_detail.style.display = "flex";
 }
-
-market_search();
+const modal_close = () => {
+    const item_detail = document.getElementById("item_detail");
+    setTimeout(() => {
+        item_detail.style.animation = "left_to_right";
+        item_detail.style.display = "none";
+    }, 500);
+}

@@ -11,6 +11,23 @@
 </head>
 
 <body>
+    <div id="item_detail" class="item_detail">
+        <div class="top_menu">
+            <!-- close button make  -->
+            <div onclick="modal_close()" class="close_btn">
+                <p class="close_btn_text">&times;</p>
+            </div>            
+        </div>
+        <img src="https://cdn.mindgil.com/news/photo/202102/70648_6561_1438.jpg" alt="" class="item_img">
+        <div class="item_title">정말 맛있는 고구마 살살녹음</div>
+        <p class="item_desc">섬유질이 많아 변비에도 좋다. 그리고 줄기는 껍질을 벗겨서 나물 반찬이나 김치를 담가 먹을 수 있는데 상당히 별미다. 고구마가 변비에 좋은 이유는 고구마의 섬유질이 대장에서야 겨우 분해되기
+            때문인데, 고구마 껍질에는 고구마의 섬유소를 분해하는 야라핀이라는 효소가 있어 먹으면 먹고서 나오는 방귀 냄새를 중화해 준다. 방귀가 걱정이라면 껍질째 먹을 것. 다만 고구마는 흙속에서 자란 걸
+            꺼내니만큼 껍질에는 대부분 흙이 묻어있기 마련이니 잘 제거해주는 게 좋다. 이 때문인지 마트에서는 세척고구마라는 것을 소량으로 포장판매하기도 한다. 그리고 밥과도 궁합이 괜찮다고 한다. 감자밥은
+            탄수화물 과잉 상태를 일으키기 쉬울뿐더러 특히나 당뇨환자들에게는 흰쌀밥보다도 위험한 반면, 고구마밥은 고구마의 섬유질이 혈당 상승을 막아주기 때문에 괜찮다.</p>
+    </div>
+
+
+
     <div class="logo">
         <img src="logo.png" alt="logo">
         시장 (See Zang)
@@ -22,13 +39,15 @@
         </ul>
     </div>
     <div class="banner_img"><img src="./banner01.png" alt="" srcset=""></div>
-    <h4 class="today_title""><img src="./todayfresh.png">오늘의 신선 식품</h4>
+    <h4 class="today_title""><img src=" ./todayfresh.png">오늘의 신선 식품</h4>
     <div class="all_item">전체보기</div>
     <div class="today_fresh_item">
-        <div><img src="https://t1.daumcdn.net/cfile/tistory/22799C3D575BEF4125" alt="" srcset=""></div>
-        <div><img src="https://static.megamart.com/product/image/0116/01160796/01160796_1_960.jpg" alt="" srcset=""></div>
+        <div onclick="item_info()"><img src="https://t1.daumcdn.net/cfile/tistory/22799C3D575BEF4125" alt="" srcset=""></div>
+        <div><img src="https://static.megamart.com/product/image/0116/01160796/01160796_1_960.jpg" alt="" srcset="">
+        </div>
         <div><img src="https://t1.daumcdn.net/cfile/tistory/999C4E4A5C03782A1E" alt="" srcset=""></div>
-        <div><img src="https://cdn.onul-hoi.com/uploads/store_package/image/1761/a2a2e8_220722084406.jpg" alt="" srcset=""></div>
+        <div><img src="https://cdn.onul-hoi.com/uploads/store_package/image/1761/a2a2e8_220722084406.jpg" alt=""
+                srcset=""></div>
     </div>
     <div class="search_box"><input id="market_search" placeholder="시장 검색"></div>
     <div class="zang_menu">
@@ -41,7 +60,8 @@
             <figcaption>피망</figcaption>
         </figure>
         <figure>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmTO0H5SMkpoclXBiJR2Zhps1Tqw9Z_t2Kww&usqp=CAU" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmTO0H5SMkpoclXBiJR2Zhps1Tqw9Z_t2Kww&usqp=CAU"
+                alt="">
             <figcaption>가지</figcaption>
         </figure>
         <figure>
@@ -77,7 +97,8 @@
             <figcaption>파</figcaption>
         </figure>
         <figure>
-            <img src="https://cdn.icon-icons.com/icons2/2990/PNG/512/chinese_cabbage_food_vegetable_vegetables_icon_187277.png" alt="">
+            <img src="https://cdn.icon-icons.com/icons2/2990/PNG/512/chinese_cabbage_food_vegetable_vegetables_icon_187277.png"
+                alt="">
             <figcaption>배추</figcaption>
         </figure>
         <figure>
@@ -93,6 +114,34 @@
             <figcaption>버섯</figcaption>
         </figure>
     </div>
+    <div class="seejang_food"><img src="./seejangfood.png" alt=""></div>
+    <h4 class="seejang_ddul_title"><img src="https://cdn-icons-png.flaticon.com/128/6954/6954668.png" alt="">마지막 떨이 상품
+    </h4>
+    <div class="seejang_ddul">
+        <img src="https://post-phinf.pstatic.net/MjAxODAxMTBfMTk0/MDAxNTE1NTY5MTA3NzAw.5AkwAwlHHkdBPOKMAiVkQXmxfBmSX6jxYm9ttt0ebq4g.SOfMc1cPiBpl2UDWx1GAHKvuAxII_AriuN-VZGyJsDsg.JPEG/%EA%B3%A0%EA%B5%AC%EB%A7%8899999.jpg?type=w1200"
+            alt="">
+        <img src="http://cdn.bosa.co.kr/news/photo/201811/2094172_138185_1139.jpg" alt="">
+        <img src="https://health.chosun.com/site/data/img_dir/2021/07/29/2021072901667_0.jpg" alt="" srcset="">
+        <img src="https://www.shinsegaegroupnewsroom.com/wp-content/uploads/2019/12/%EB%B2%8C%EC%8D%A8-%EC%97%AC%EB%A6%84-%EC%9D%B4%EB%A7%88%ED%8A%B8-%EC%97%AC%EB%A6%84-%EA%B3%BC%EC%9D%BC-%EC%88%98%EB%B0%95-%ED%95%A0%EC%9D%B8%ED%96%89%EC%82%AC1.jpg"
+            alt="" srcset="">
+        <img src="https://cdn.mindgil.com/news/photo/202007/69526_3762_1623.jpg" alt="" srcset="">
+        <img src="https://cdn.manzlab.com/news/photo/201808/1459_2985_4311.jpg" alt="" srcset="">
+    </div>
+    <div class="spon">
+        <img src="/banner.png" alt="" srcset="">
+    </div>
+    <div class="footer_menu">
+        <ul>
+            <li>사업자 정보조회</li>
+            <li>이용약관</li>
+            <li>개인정보처리방침</li>
+            <li>청소년보호정책</li>
+            <li>고객센터</li>
+        </ul>
+    </div>
+    <h4 class="job_info">주식회사 하은미디어</h4>
+    <p class="agree">주식회사 하은미디어는 통신판매자 당사자가 아닙니다. 따라서 주식회사 하은미디어는 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
 </body>
 <script src="script.js"></script>
+
 </html>

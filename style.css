@@ -144,7 +144,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "zang1 zang2 zang3 zang4" "zang5 zang6 zang7 zang8";
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     margin: 7px 0px;
     font-family: 'SF_IceMango';
@@ -166,4 +166,124 @@ body{
     height: 50px;
     object-fit: contain;
     border-radius: 7px;
+}
+.seejang_food{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.seejang_food img{
+    width: 98%;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 10px;
+}
+.seejang_ddul_title{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18 px;
+}
+.seejang_ddul_title img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.seejang_ddul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px 0px;
+}
+.seejang_ddul img{
+    width: 100%;
+    object-fit: cover;
+}
+.seejang_ddul img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.spon{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.spon img{
+    width: 100%;
+    box-shadow: 0px 0px 10px #ccc;
+}
+.footer_menu{
+    padding: 5px 0px;
+}
+.footer_menu ul{
+    display: flex;
+    justify-content: space-around;
+    font-size: 9px;
+}
+.job_info{
+    padding: 5px 8px;
+}
+.agree{
+    padding: 3px 8px;
+    font-size: 11px;
+}
+.item_detail{
+    position: fixed;
+    background: #000;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+    animation: left_to_right 0.5s;
+}
+.item_img{
+    margin-top: 7px;
+    width: 95%;
+    border-radius: 7px;
+    height: 300px;
+}
+.item_title{
+    width: 93%;
+    background-color: aliceblue;
+    margin-top: 10px;
+    padding: 2%;
+    color: black;
+    border-radius: 7px;
+    font-size: 22px;
+}
+.item_desc{
+    line-height: 1.5;
+    margin-top: 10px;
+    width: 95%;
+    color: white;
+    font-size: 14px;
+}
+.close_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.close_btn_text{
+    color: black;
+}
+@keyframes left_to_right{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
