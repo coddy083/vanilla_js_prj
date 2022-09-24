@@ -106,6 +106,9 @@ body{
     overflow-x: scroll;
     display: flex;
 }
+.today_fresh_item::-webkit-scrollbar{
+    display: none;
+}
 .today_fresh_item div{
     width: 150px;
     height: 120px;
@@ -285,5 +288,13 @@ body{
     }
     100%{
         transform: translateX(0%);
+    }
+}
+@keyframes move_left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
     }
 }
