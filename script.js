@@ -25,3 +25,13 @@ const msg_alert = (msg) => {
         timer: 1500
     })
 }
+
+const market_detail_close = () => {
+    const market_detail = document.getElementById("market_detail");
+    market_detail.classList.add("move_left");
+    setTimeout(() => {
+        market_detail.style.display = "none";
+        market_detail.classList.remove("move_left");
+    }
+    , 500);
+}
