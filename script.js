@@ -9,7 +9,7 @@ const modal_close = () => {
         item_detail.style.display = "none";
         item_detail.classList.remove("move_left");
     }
-    , 500);
+        , 500);
 }
 
 const market_detail_show = () => {
@@ -33,5 +33,22 @@ const market_detail_close = () => {
         market_detail.style.display = "none";
         market_detail.classList.remove("move_left");
     }
-    , 500);
+        , 500);
 }
+
+const market_detail_content_img = () => {
+    const market_detail_content = document.getElementById("market_detail_content");
+    // create img
+    const img_list = []
+    for (let i = 1; i < 5; i++) {
+        const img = document.createElement("img");
+        img.src = `./detail_img/00${i}.jpg`;
+        img_list.push(img);
+        img.classList.add("market_detail_content_img");
+    }
+    // append img
+    for (let i = 0; i < img_list.length; i++) {
+        market_detail_content.appendChild(img_list[i]);
+    }
+}
+market_detail_content_img();

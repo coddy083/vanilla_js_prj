@@ -11,6 +11,7 @@
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'SF_IceMango';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_IceMango.woff') format('woff');
@@ -31,27 +32,37 @@
     font-style: normal;
 }
 
-body,h1,p,ul,li,h4,figure{
+body,
+h1,
+p,
+ul,
+li,
+h4,
+figure {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
-.top_menu{
+
+.top_menu {
     width: 100vw;
     height: 50px;
     background: #000;
     grid-template-areas: "logo menu";
 }
-.top_menu ul{
+
+.top_menu ul {
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.top_menu ul li{
+
+.top_menu ul li {
     width: 100%;
     height: 100%;
     display: flex;
@@ -60,13 +71,15 @@ body{
     text-align: center;
     color: white;
 }
-.top_menu ul li img{
+
+.top_menu ul li img {
     width: 30px;
     height: 30px;
     padding: 0 5px;
     object-fit: cover;
 }
-.logo{
+
+.logo {
     grid-area: logo;
     display: flex;
     justify-content: center;
@@ -77,20 +90,24 @@ body{
     font-family: 'ulsanjunggu';
     padding: 10px;
 }
+
 .logo img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
-.banner_img{
+
+.banner_img {
     width: 100%;
 }
-.banner_img img{
+
+.banner_img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.today_title{
+
+.today_title {
     display: flex;
     padding: 0px 10px;
     font-size: 18px;
@@ -98,37 +115,44 @@ body{
     align-items: center;
     margin: 7px 0px;
 }
-.today_title img{
+
+.today_title img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
-.all_item{
+
+.all_item {
     font-size: 13px;
     display: flex;
     justify-content: flex-end;
     margin-bottom: 5px;
     padding: 0 10px;
 }
-.today_fresh_item{
+
+.today_fresh_item {
     overflow-x: scroll;
     display: flex;
 }
-.today_fresh_item::-webkit-scrollbar{
+
+.today_fresh_item::-webkit-scrollbar {
     display: none;
 }
-.today_fresh_item div{
+
+.today_fresh_item div {
     width: 150px;
     height: 120px;
     margin: 10px;
 }
-.today_fresh_item div img{
+
+.today_fresh_item div img {
     width: 150px;
     height: 100%;
     object-fit: cover;
     border-radius: 7px;
 }
-.search_box{
+
+.search_box {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -136,7 +160,8 @@ body{
     margin: 10px 0px;
     position: relative;
 }
-.search_box input{
+
+.search_box input {
     width: 90%;
     height: 40px;
     border: 1px solid #ccc;
@@ -144,24 +169,27 @@ body{
     padding: 0 10px;
     font-size: 14px;
 }
-.magnifier{
+
+.magnifier {
     position: absolute;
     left: 20px;
     top: 10px;
     width: 20px;
     height: 20px;
 }
-.zang_menu{
+
+.zang_menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "zang1 zang2 zang3 zang4" "zang5 zang6 zang7 zang8";
+    grid-template-areas: "zang1 zang2 zang3 zang4""zang5 zang6 zang7 zang8";
     /* width: 100%; */
     height: 100%;
     margin: 7px 0px;
     font-family: 'SF_IceMango';
     font-weight: 600;
 }
-.zang_menu figure{
+
+.zang_menu figure {
     width: 100%;
     height: 100%;
     text-align: center;
@@ -172,76 +200,93 @@ body{
     /* align-items: center; */
     /* flex-direction: column; */
 }
-.zang_menu figure img{
+
+.zang_menu figure img {
     width: 100%;
     height: 50px;
     object-fit: contain;
     border-radius: 7px;
 }
-.seejang_food{
+
+.seejang_food {
     width: 100vw;
     display: flex;
     justify-content: center;
     margin: 10px 0px;
     cursor: pointer;
 }
-.seejang_food img{
+
+.seejang_food img {
     width: 98%;
     box-shadow: 0px 0px 10px #ccc;
     border-radius: 10px;
 }
-.seejang_ddul_title{
+
+.seejang_ddul_title {
     padding: 5px 10px;
     display: flex;
     align-items: center;
     font-size: 18 px;
 }
-.seejang_ddul_title img{
+
+.seejang_ddul_title img {
     width: 30px;
     height: 30px;
     margin-right: 10px;
 }
-.seejang_ddul{
+
+.seejang_ddul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10px 0px;
 }
-.seejang_ddul img{
+
+.seejang_ddul img {
     width: 100%;
     object-fit: cover;
 }
-.seejang_ddul img:hover{
+
+.seejang_ddul img:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
-.spon{
+
+.spon {
     width: 100vw;
     display: flex;
     justify-content: center;
     margin: 10px 0px;
     cursor: pointer;
 }
-.spon img{
+
+.spon img {
     width: 100%;
     box-shadow: 0px 0px 10px #ccc;
 }
-.footer_menu{
+
+.footer_menu {
     padding: 5px 0px;
 }
-.footer_menu ul{
+
+.footer_menu ul {
     display: flex;
     justify-content: space-around;
     font-size: 9px;
 }
-.job_info{
+
+.job_info {
     padding: 5px 8px;
 }
-.agree{
+
+.agree {
     padding: 3px 8px;
     font-size: 11px;
 }
-.item_detail{
-    position: fixed;
+
+.item_detail {
+    position: sticky;
+    top: 0;
+    left: 0;
     background: #000;
     width: 100vw;
     height: 100vh;
@@ -252,13 +297,15 @@ body{
     display: none;
     animation: left_to_right 0.5s;
 }
-.item_img{
+
+.item_img {
     margin-top: 7px;
     width: 95%;
     border-radius: 7px;
     height: 300px;
 }
-.item_title{
+
+.item_title {
     width: 93%;
     background-color: aliceblue;
     margin-top: 10px;
@@ -267,14 +314,16 @@ body{
     border-radius: 7px;
     font-size: 22px;
 }
-.item_desc{
+
+.item_desc {
     line-height: 1.5;
     margin-top: 10px;
     width: 95%;
     color: white;
     font-size: 14px;
 }
-.close_btn{
+
+.close_btn {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -287,14 +336,17 @@ body{
     align-items: center;
     cursor: pointer;
 }
-.close_btn_text{
+
+.close_btn_text {
     color: black;
 }
-.market_detail{
+
+.market_detail {
     font-family: 'SUIT-Medium';
-    position: fixed;
+    position: sticky;
+    top: 0px;
+    left: 0px;
     width: 100vw;
-    height: 100vh;
     z-index: 10;
     display: none;
     background: white;
@@ -303,7 +355,8 @@ body{
     animation: left_to_right 0.5s;
     font-size: 12px;
 }
-.market_detail_img_box{
+
+.market_detail_img_box {
     width: 100%;
     height: 200px;
     display: flex;
@@ -312,12 +365,14 @@ body{
     flex-direction: column;
     position: relative;
 }
-.market_detail_img{
+
+.market_detail_img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.market_detail_title{
+
+.market_detail_title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,16 +386,20 @@ body{
     text-align: center;
     flex-direction: column;
 }
-.market_detail_review{
+
+.market_detail_review {
     margin-top: 5px;
 }
-.market_detail_review span{
+
+.market_detail_review span {
     color: red;
 }
-.market_detail_review span:nth-child(2){
+
+.market_detail_review span:nth-child(2) {
     color: yellowgreen;
 }
-.market_detail_coupon{
+
+.market_detail_coupon {
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -353,10 +412,12 @@ body{
     font-size: 15px;
     color: skyblue;
 }
-.move_left{
+
+.move_left {
     animation: move_left 0.5s ease-in-out;
 }
-.market_detail_close_text{
+
+.market_detail_close_text {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -369,24 +430,28 @@ body{
     align-items: center;
     cursor: pointer;
 }
-.market_detail_info{
+
+.market_detail_info {
     display: flex;
     flex-direction: column;
     font-size: 18px;
     margin-top: 30px;
     margin-left: 20px;
 }
-.market_detail_info > p{
+
+.market_detail_info>p {
     margin: 5px 0px;
     display: flex;
     align-items: center;
 }
-.market_icon{
+
+.market_icon {
     width: 20px;
     height: 20px;
     margin-right: 5px;
 }
-.sell_not_cash{
+
+.sell_not_cash {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,18 +461,33 @@ body{
     background: #fff5f5;
 }
 
-@keyframes left_to_right{
-    0%{
+.market_detail_content_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.market_detail_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes left_to_right {
+    0% {
         transform: translateX(-100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0%);
     }
 }
+
 @keyframes move_left {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-100%);
     }
