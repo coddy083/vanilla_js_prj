@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="shortcut icon" href="icon01.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
     <title>시장</title>
 </head>
 
@@ -16,15 +18,35 @@
             <!-- close button make  -->
             <div onclick="modal_close()" class="close_btn">
                 <p class="close_btn_text">&times;</p>
-            </div>            
+            </div>
         </div>
         <img src="https://cdn.mindgil.com/news/photo/202102/70648_6561_1438.jpg" alt="" class="item_img">
         <div class="item_title">정말 맛있는 고구마 살살녹음</div>
-        <p class="item_desc">섬유질이 많아 변비에도 좋다. 그리고 줄기는 껍질을 벗겨서 나물 반찬이나 김치를 담가 먹을 수 있는데 상당히 별미다. 고구마가 변비에 좋은 이유는 고구마의 섬유질이 대장에서야 겨우 분해되기
+        <p class="item_desc">섬유질이 많아 변비에도 좋다. 그리고 줄기는 껍질을 벗겨서 나물 반찬이나 김치를 담가 먹을 수 있는데 상당히 별미다. 고구마가 변비에 좋은 이유는 고구마의 섬유질이
+            대장에서야 겨우 분해되기
             때문인데, 고구마 껍질에는 고구마의 섬유소를 분해하는 야라핀이라는 효소가 있어 먹으면 먹고서 나오는 방귀 냄새를 중화해 준다. 방귀가 걱정이라면 껍질째 먹을 것. 다만 고구마는 흙속에서 자란 걸
             꺼내니만큼 껍질에는 대부분 흙이 묻어있기 마련이니 잘 제거해주는 게 좋다. 이 때문인지 마트에서는 세척고구마라는 것을 소량으로 포장판매하기도 한다. 그리고 밥과도 궁합이 괜찮다고 한다. 감자밥은
             탄수화물 과잉 상태를 일으키기 쉬울뿐더러 특히나 당뇨환자들에게는 흰쌀밥보다도 위험한 반면, 고구마밥은 고구마의 섬유질이 혈당 상승을 막아주기 때문에 괜찮다.</p>
     </div>
+
+    <div id="market_detail" class="market_detail">
+        <div class="market_detail_img_box">
+            <img class="market_detail_img"
+                src="https://m.nongmin.com/upload/news/201808/20180805071130579/20180805071130579.jpg" alt="">
+            <div class="market_detail_title">
+                맛나는 복숭아 판매중
+                <div class="market_detail_review">
+                    <span>★</span> 4.8 <span>리뷰 12개</span>
+                </div>
+            </div>
+        </div>
+        <div class="market_detail_coupon">
+                10% 할인 쿠폰 받기!
+        </div>
+
+    </div>
+
+
 
 
 
@@ -42,7 +64,8 @@
     <h4 class="today_title""><img src=" ./todayfresh.png">오늘의 신선 식품</h4>
     <div class="all_item">전체보기</div>
     <div class="today_fresh_item">
-        <div onclick="item_info()"><img src="https://t1.daumcdn.net/cfile/tistory/22799C3D575BEF4125" alt="" srcset=""></div>
+        <div onclick="item_info()"><img src="https://t1.daumcdn.net/cfile/tistory/22799C3D575BEF4125" alt="" srcset="">
+        </div>
         <div><img src="https://static.megamart.com/product/image/0116/01160796/01160796_1_960.jpg" alt="" srcset="">
         </div>
         <div><img src="https://t1.daumcdn.net/cfile/tistory/999C4E4A5C03782A1E" alt="" srcset=""></div>
@@ -97,8 +120,7 @@
             <figcaption>파</figcaption>
         </figure>
         <figure>
-            <img src="https://cdn-icons-png.flaticon.com/512/933/933248.png"
-                alt="">
+            <img src="https://cdn-icons-png.flaticon.com/512/933/933248.png" alt="">
             <figcaption>감자</figcaption>
         </figure>
         <figure>
@@ -118,7 +140,8 @@
     <h4 class="seejang_ddul_title"><img src="https://cdn-icons-png.flaticon.com/128/6954/6954668.png" alt="">마지막 떨이 상품
     </h4>
     <div class="seejang_ddul">
-        <img src="https://post-phinf.pstatic.net/MjAxODAxMTBfMTk0/MDAxNTE1NTY5MTA3NzAw.5AkwAwlHHkdBPOKMAiVkQXmxfBmSX6jxYm9ttt0ebq4g.SOfMc1cPiBpl2UDWx1GAHKvuAxII_AriuN-VZGyJsDsg.JPEG/%EA%B3%A0%EA%B5%AC%EB%A7%8899999.jpg?type=w1200"
+        <img onclick="market_detail_show()"
+            src="https://post-phinf.pstatic.net/MjAxODAxMTBfMTk0/MDAxNTE1NTY5MTA3NzAw.5AkwAwlHHkdBPOKMAiVkQXmxfBmSX6jxYm9ttt0ebq4g.SOfMc1cPiBpl2UDWx1GAHKvuAxII_AriuN-VZGyJsDsg.JPEG/%EA%B3%A0%EA%B5%AC%EB%A7%8899999.jpg?type=w1200"
             alt="">
         <img src="http://cdn.bosa.co.kr/news/photo/201811/2094172_138185_1139.jpg" alt="">
         <img src="https://health.chosun.com/site/data/img_dir/2021/07/29/2021072901667_0.jpg" alt="" srcset="">
